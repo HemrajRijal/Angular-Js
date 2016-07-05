@@ -1,0 +1,53 @@
+<!doctype html>
+<html ng-app='todoapp'>
+
+<head>
+	<title>Angular Js</title>
+	<script type="text/javascript" src="lib/angular.min.js"></script>
+
+</head>
+
+<body>
+
+	<!-- <div  ng-init="users=['Ram', 'Shyam', 'Hari']">
+		<ul>
+
+			<li ng-repeat="user in users">
+				{{user}}
+
+			</li>
+
+		</ul>
+		<p ng-bind="users"></p>
+
+		<!-- {{'a'}}
+		<!-- <input type="" name="" ng-model="name">
+		<p ng-bind="name"> </p> -->
+
+		<!-- {{name}} --> 
+	<!-- </div> --> 
+
+
+	<div ng-controller="MainCtrl as main">
+		<input type="text" id="add">
+		<button ng-click="main.handleclick()">
+			CLICK
+		</button>
+			
+
+		<ul>
+
+			<li ng-repeat="user in main.users">
+				{{user}}
+				<button ng-click="main.RemoveItem($index)">Remove</button>
+
+			</li>
+
+		</ul>
+		
+
+	</div>
+<script type="text/javascript" src="app.js"></script>
+	
+</body>
+</html>
